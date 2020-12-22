@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PCalculator</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <input type="text" id='screen' name="calc" id="calc">
+  <div id="calculator">
+
+
+    <div id="buttons">
+      <button type="button" class="btn btn-warning" id='calbtns' value="*" onclick="displayValue(this)">*</button>
+      <button type="button" class="btn btn-warning calbtns" value="/" onclick="displayValue(this)">/</button>
+      <button type="button" class="btn btn-warning calbtns" value="-" onclick="displayValue(this)">-</button>
+      <button type="button" class="btn btn-warning calbtns" value="+" onclick="displayValue(this)">+</button></br>
+      <!--graybtns-->
+      <button type="button" id="wildcard" class="btn btn-secondary calbtns" value="." onclick="displayValue(this)">.</button>
+      <button type="button" class="btn btn-secondary calbtns" value="9" onclick="displayValue(this)">9</button>
+      <button type="button" class="btn btn-secondary " value="8" onclick="displayValue(this)">8</button>
+
+      <button type="button" class="btn btn-secondary " value="7" onclick="displayValue(this)">7</button>
+      </br>
+      <button type="button" onclick="displayValue(this)" class="btn btn-secondary" value="6">6</button>
+      <button type="button" class="btn btn-secondary" onclick="displayValue(this)" value="5">5</button>
+      <button type="button" onclick="displayValue(this)" class="btn btn-secondary" value="4">4</button>
+      <button type="button" class="btn btn-secondary" onclick="displayValue(this)" value="3">3</button>
+      </br>
+      <button type="button" class="btn btn-secondary" onclick="displayValue(this)" value="2">2</button>
+      <button type="button" class="btn btn-secondary" onclick="displayValue(this)" value="1">1</button>
+      <button type="button" class="btn btn-secondary" onclick="displayValue(this)" value="0">0</button>
+      <!--green and red-->
+      <button type="button" class="btn btn-success " id="equalbtn" value="=" onclick="evaluation()">=</button>
+      <button type="reset" class="btn btn-danger " onclick="clearScr()" id="clearbtn" data-num="c">C</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

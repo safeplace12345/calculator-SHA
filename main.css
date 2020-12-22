@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: #ff0e45;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  display: block;
+  margin-bottom : 10px;
+}
+#calculator {
+  width: 600px;
+}
+#buttons {
+  width: 194px;
+  margin: 0 auto;
+  display: flex;
+  max-height: 40vh;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+button {
+  padding: 10px;
+}
